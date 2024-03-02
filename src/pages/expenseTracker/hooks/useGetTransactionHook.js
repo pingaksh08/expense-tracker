@@ -39,7 +39,6 @@ const useGetTransactionHook = () => {
                     }
                 })
 
-                console.log(totalBalance, totalExpense, totalIncome);
                 totalBalance = totalIncome - totalExpense;
                 setTransactions(docs);
                 setBalanceAmount(totalBalance);

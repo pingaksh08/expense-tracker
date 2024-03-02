@@ -2,15 +2,16 @@ import React from 'react'
 
 const TransactionList = ({ transactions }) => {
     return (
-        <ul>
-            {
-                transactions.map(item =>
-                    <li ><h4>{item.description}</h4>
-                        <p>$ {item.transactionAmount} -- <label style={{ color: item.transactionType === "expense" ? "red" : "green" }}>{item.transactionType}</label></p>
-                    </li>
-                )
-            }
-        </ul>
+        <>{
+            transactions.map(item =>
+                <><div>{item.description} <p style={{ color: item.transactionType === "expense" ? "red" : "green", fontWeight: 'lighter' }} > {item.transactionAmount} INR </p></div>
+               
+            </>
+                
+            )
+        }</>
+            
+        
 
     )
 }

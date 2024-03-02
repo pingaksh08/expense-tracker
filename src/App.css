@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* background-color: #FFB6C1; */
 }
 
 .App-logo {
@@ -32,7 +33,58 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.homepage-logo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: 80vh;
+  width: 50vw;
+}
+
+.header {
+  font-weight: bolder;
+  font-size: 24px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.balance-titles {
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+
+    .balance-total {
+      font-weight: 500;
+      color: blue;
+    }
+
+    .income-total {
+      font-weight: 500;
+      color: green;
+    }
+
+    .expense-total {
+      font-weight: 500;
+      color: red;
+    }
+}
+
+.add-transaction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transactions-list {
+  margin: 10px;
+  border: solid black 3px;
 }

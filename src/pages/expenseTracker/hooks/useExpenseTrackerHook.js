@@ -13,7 +13,7 @@ const useExpenseTrackerHook = () => {
             description: description,
             transactionAmount: transactionAmount,
             transactionType: transactionType,
-            createdAt: serverTimestamp()
+            createdAt: new Date()
         });
     }
 
